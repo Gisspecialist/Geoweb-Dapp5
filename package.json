@@ -1,11 +1,18 @@
 {
-  "name": "geoweb3-dapp-restored-no-esri-production",
-  "version": "4.0.0",
+  "name": "geoweb3-dapp-demo-style-no-esri-production",
+  "version": "4.1.0",
   "private": true,
-  "description": "GeoWeb3 DApp restored feature set with independent non-Esri metadata submission, OSM rewards, DAO verification, contribution faucet and production scaffolding.",
+  "description": "GeoWeb3 DApp with demo-style dashboard, independent non-Esri metadata submission, OSM rewards, DAO verification, contribution faucet, production scaffolding and Vercel-ready deployment configuration.",
+  "workspaces": [
+    "frontend"
+  ],
   "scripts": {
-    "dev": "cd frontend && npm run dev",
-    "build": "cd frontend && npm run build",
+    "dev": "npm --workspace geoweb3-frontend run dev",
+    "build": "npm --workspace geoweb3-frontend run build",
+    "preview": "npm --workspace geoweb3-frontend run preview",
     "start:backend": "cd backend && npm start"
+  },
+  "engines": {
+    "node": ">=20"
   }
 }
