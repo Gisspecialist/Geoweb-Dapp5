@@ -1,17 +1,11 @@
 {
-  "name": "geoweb3-dapp-no-esri-metadata-production-mvp",
-  "version": "0.1.0",
+  "name": "geoweb3-dapp-restored-no-esri-production",
+  "version": "4.0.0",
   "private": true,
-  "description": "GeoWeb3 vendor-neutral geospatial metadata registry with OSM rewards and contribution faucet. No Esri platform dependency.",
+  "description": "GeoWeb3 DApp restored feature set with independent non-Esri metadata submission, OSM rewards, DAO verification, contribution faucet and production scaffolding.",
   "scripts": {
-    "frontend": "cd frontend && python -m http.server 8080",
-    "backend": "cd backend && npm install && npm run dev"
-  },
-  "devDependencies": {
-    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
-    "hardhat": "^2.22.17"
-  },
-  "dependencies": {
-    "@openzeppelin/contracts": "^5.1.0"
+    "dev": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start:backend": "cd backend && npm start"
   }
 }
