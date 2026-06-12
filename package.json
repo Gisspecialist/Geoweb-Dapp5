@@ -1,0 +1,17 @@
+{
+  "name": "geoweb3-dapp-no-esri-metadata-production-mvp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "GeoWeb3 vendor-neutral geospatial metadata registry with OSM rewards and contribution faucet. No Esri platform dependency.",
+  "scripts": {
+    "frontend": "cd frontend && python -m http.server 8080",
+    "backend": "cd backend && npm install && npm run dev"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.17"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.1.0"
+  }
+}
